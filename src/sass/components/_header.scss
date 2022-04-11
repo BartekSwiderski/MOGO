@@ -1,0 +1,104 @@
+@import '../utils/variables';
+
+.header{
+  background-image: linear-gradient(rgba(244,132,132, 0.9),rgba(252,228,140, 0.9)), url("../images/background.png");
+  background-size: cover;
+  width: 1925px;
+  margin: auto;
+  height: 1050px;
+  text-align: center;
+  &__logo{
+    font-family: getFont('font-first');
+    font-size: 30px;
+    font-weight: 600;
+    color: getCol('font-color-second');
+  }
+  &__menu{
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    height: 90px;
+    padding: 0px;
+  }
+  &__submenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+  }
+  &__submenu-item{
+    font-family: getFont('font-first');
+    font-size: 14px;
+    font-weight: 400; 
+  }
+  &__submenu-link{
+    text-decoration: none;
+    color: getCol('font-color-second');
+  }
+  &__submenu-link:hover,
+  &__submenu-link:focus{
+    color: getCol('color-second');
+  }
+  &__window{
+    align-items: center;
+  }
+  &__subtitle{
+    margin-top: 130px;
+    margin-bottom: 40px;
+    font-family: getFont('font-second');
+    font-size: 72px;
+    font-weight: 400;
+    color: getCol('font-color-second');
+  }
+  &__submenu-link::after{
+    content:"";
+    width: 53px;
+    height: 4px;
+    background-color: getCol('color-second');
+    display: block;
+    position: relative;
+    top: 5px;
+    border-radius: 4px;
+    opacity: 0;
+  }
+  &__submenu-link:hover::after,
+  &__submenu-link:focus::after{
+    opacity: 1;
+  }
+  &__submenu-icon{
+    fill: getCol('font-color-second');
+  }
+  &__submenu-icon:hover,
+  &__submenu-icon:focus{
+    fill: getCol('color-second');
+  }
+
+  &__title{
+    font-family: getFont('font-first');
+    font-size: 150px;
+    font-weight: 700;
+    color: getCol('font-color-second');
+    text-transform: uppercase; 
+    width: 840px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 95px;
+    line-height: 0.92;
+  }
+  &__icon{
+    fill: getCol('font-color-second');
+  }
+  &__btn{
+    width: 160px;
+    height: 40px;
+    background: none;
+    font-family: getFont('font-first');
+    font-size: 14px;
+    font-weight: 700;
+    color: getCol('font-color-second');
+    border: solid 1px getCol('font-color-second');
+    cursor: pointer;
+  }
+
+}

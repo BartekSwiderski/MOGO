@@ -1,0 +1,250 @@
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 132, 132, 0.9)), to(rgba(252, 228, 140, 0.9))), url("../images/background.png");
+  background-image: linear-gradient(rgba(244, 132, 132, 0.9), rgba(252, 228, 140, 0.9)), url("../images/background.png");
+  background-size: cover;
+  width: 1925px;
+  margin: auto;
+  height: 1050px;
+  text-align: center;
+}
+
+.header__logo {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  padding: 0px;
+}
+
+.header__submenu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__submenu-item {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header__submenu-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__submenu-link:hover, .header__submenu-link:focus {
+  color: #fce48c;
+}
+
+.header__window {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__subtitle {
+  margin-top: 130px;
+  margin-bottom: 40px;
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header__submenu-link::after {
+  content: "";
+  width: 53px;
+  height: 4px;
+  background-color: #fce48c;
+  display: block;
+  position: relative;
+  top: 5px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.header__submenu-link:hover::after, .header__submenu-link:focus::after {
+  opacity: 1;
+}
+
+.header__submenu-icon {
+  fill: #fff;
+}
+
+.header__submenu-icon:hover, .header__submenu-icon:focus {
+  fill: #fce48c;
+}
+
+.header__title {
+  font-family: "Montserrat";
+  font-size: 150px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  width: 840px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 95px;
+  line-height: 0.92;
+}
+
+.header__icon {
+  fill: #fff;
+}
+
+.header__btn {
+  width: 160px;
+  height: 40px;
+  background: none;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.services {
+  text-align: center;
+}
+
+.services__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 365px 365px 365px;
+      grid-template-columns: 365px 365px 365px;
+  gap: 50px;
+  list-style: none;
+  padding: 0px;
+}
+
+.services__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services__icon {
+  margin-right: 25px;
+  fill: #94e4d4;
+}
+
+.services__title {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.services__title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #f48484;
+  display: block;
+  position: relative;
+  top: 50px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.services__subtitle {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  color: #333;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.services__category {
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.services__txt {
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #999;
+  line-height: 1.80;
+}
+
+.team {
+  text-align: center;
+}
+
+.team__title {
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.team__title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: #f48484;
+  display: block;
+  position: relative;
+  top: 50px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.team__subtitle {
+  font-family: "Kaushan Script";
+  font-size: 24px;
+  color: #333;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+
+.team__lorem {
+  margin: auto;
+  width: 940px;
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #333;
+  line-height: 1.8;
+}
+
+.team__photo {
+  width: 380px;
+}
+/*# sourceMappingURL=main.css.map */

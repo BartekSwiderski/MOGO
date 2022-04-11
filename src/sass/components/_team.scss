@@ -1,0 +1,46 @@
+@import '../utils/variables';
+
+.team{
+  text-align: center;
+
+  &__title{
+    font-family: getFont('font-first');
+    font-size: 30px;
+    font-weight: 700;
+    color: getCol('font-color-first');
+    text-transform: uppercase; 
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  &__title::after{
+    content:"";
+    width: 100px;
+    height: 4px;
+    background-color: getCol('color-first');
+    display: block;
+    position: relative;
+    top: 50px;
+    border-radius: 4px;
+    margin: auto;
+  }
+  &__subtitle{
+    font-family: getFont('font-second');
+    font-size: 24px;
+    color: getCol('font-color-first');
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  &__lorem{
+    margin: auto;
+    width: 940px;
+    font-family: getFont('font-third');
+    font-size: 15px;
+    color: getCol('font-color-first');
+    line-height: 1.8;
+  }
+
+&__photo{
+width: 380px;
+}
+
+}

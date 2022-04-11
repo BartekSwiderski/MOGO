@@ -10,80 +10,179 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./src/sass/main.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <ul>
-        <p>MoGo</p>
-        <ul>
-          <li>about</li>
-          <li>service</li>
-          <li>work</li>
-          <li>blog</li>
-          <li>contact</li>
-          <li>kosz</li>
-          <li>lupa</li>
+    <header class="header">
+      <div class="container">
+        <ul class="header__menu">
+          <p ul class="header__logo">MoGo</p>
+          <ul ul class="header__submenu">
+            <li class="header__submenu-item">
+              <a class="header__submenu-link" href="#">about</a>
+            </li>
+            <li class="header__submenu-item">
+              <a class="header__submenu-link" href="#">service</a>
+            </li>
+            <li class="header__submenu-item">
+              <a class="header__submenu-link" href="#">work</a>
+            </li>
+            <li class="header__submenu-item">
+              <a class="header__submenu-link" href="#">blog</a>
+            </li>
+            <li class="header__submenu-item">
+              <a class="header__submenu-link" href="#">contact</a>
+            </li>
+            <li class="header__submenu-item">
+              <a href="#">
+                <svg class="header__submenu-icon" width="17" height="17">
+                  <use href="./src/images/icons.svg#icon-basket"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__submenu-item">
+              <a href="#">
+                <svg class="header__submenu-icon" width="14" height="14">
+                  <use href="./src/images/icons.svg#icon-search"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </ul>
-      </ul>
-      <h2>Creative Template</h2>
-      <h1>welcome to mogo</h1>
-      <button>learn more</button>
+        <div class="header__window">
+          <h2 class="header__subtitle">Creative Template</h2>
+          <h1 class="header__title">welcome to mogo</h1>
+          <button class="header__btn">learn more</button>
+        </div>
+      </div>
     </header>
-    <div>
-      <h4>We work with</h4>
-      <h3>amazing services</h3>
+    <div class="services container">
+      <h4 class="services__subtitle">We work with</h4>
+      <h3 class="services__title">amazing services</h3>
 
-      <ul>
-        <li>
-          <svg></svg>
+      <ul class="services__grid">
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-clock"></use>
+          </svg>
           <div>
-            <p>Photography</p>
-            <p>
+            <p class="services__category">Photography</p>
+            <p class="services__txt">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </p>
           </div>
         </li>
-        <li>
-          <svg></svg>
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-chart"></use>
+          </svg>
           <div>
-            <p>Web Design</p>
-            <p>
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
+            <p class="services__category">Web Design</p>
+            <p class="services__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </p>
           </div>
         </li>
-        <li>
-          <svg></svg>
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-monitor"></use>
+          </svg>
           <div>
-            <p></p>
-            <p></p>
+            <p class="services__category">Creativity</p>
+            <p class="services__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </li>
-        <li>
-          <svg></svg>
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-book"></use>
+          </svg>
           <div>
-            <p></p>
-            <p></p>
+            <p class="services__category">seo</p>
+            <p class="services__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </li>
-        <li>
-          <svg></svg>
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-house"></use>
+          </svg>
           <div>
-            <p></p>
-            <p></p>
+            <p class="services__category">Css/Html</p>
+            <p class="services__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </li>
-        <li>
-          <svg></svg>
+        <li class="services__item">
+          <svg class="services__icon" width="60" height="60">
+            <use href="./src/images/icons.svg#icon-square"></use>
+          </svg>
           <div>
-            <p></p>
-            <p></p>
+            <p class="services__category">digital</p>
+            <p class="services__txt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </div>
         </li>
       </ul>
     </div>
-    <div></div>
+    <div class="team">
+      <h4 class="team__subtitle">Who we are</h4>
+      <h3 class="team__title">Meet our team</h3>
+      <p class="team__lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eligendi
+        odio id. Maxime iure cum, sunt praesentium illo ullam impedit eaque
+        corrupti. In quia eos commodi! Nulla consequuntur tempora nobis.
+      </p>
+      <ul class="team__grid">
+        <li class="team__item">
+          <div class="team__photo">
+            <img
+              alt="Zdjęcie Matthew Dix"
+              src="./src/images/img1.jpg"
+              srcset="./src/images/img1@2x.jpg 2x"
+            />
+          </div>
+          <div class="team__overlay"></div>
+          <p class="team__name">Matthew Dix</p>
+          <p class="team__job">Graphic Design</p>
+        </li>
+        <li class="team__item">
+          <div class="team__photo">
+            <img
+              alt="Zdjęcie Christopher Campbell"
+              src="./src/images/img2.jpg"
+              srcset="./src/images/img2@2x.jpg 2x"
+            />
+          </div>
+          <div class="team__overlay"></div>
+          <p class="team__name">Christopher Campbell</p>
+          <p class="team__job">Branding/UX design</p>
+        </li>
+        <li class="team__item">
+          <div class="team__photo">
+            <img
+              alt="Zdjęcie Michael Fertig"
+              src="./src/images/img3.jpg"
+              srcset="./src/images/img3@2x.jpg 2x"
+            />
+          </div>
+          <div class="team__overlay"></div>
+          <p class="team__name">Michael Fertig</p>
+          <p class="team__job">Developer</p>
+        </li>
+      </ul>
+    </div>
     <footer></footer>
   </body>
 </html>

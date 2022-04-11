@@ -1,0 +1,23 @@
+$colors:(
+    'font-color-first': #333,
+    'font-color-second': #fff, 
+    'font-color-third': #999, 
+    'color-first': #f48484,
+    'color-second': #fce48c,
+    'color-third': #ebfbd3,
+    'color-fourth': #94e4d4,
+);
+
+@function getCol($key) {
+    @return map-get($colors, $key);
+}
+
+$font: (
+    'font-first': 'Montserrat',
+    'font-second': 'Kaushan Script',
+    'font-third': 'Roboto',
+);
+
+@function getFont($key) {
+    @return map-get($font, $key);
+}

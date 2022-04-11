@@ -1,0 +1,63 @@
+@import '../utils/variables';
+
+.services{
+  text-align: center;
+
+  &__grid{
+    display: grid;
+    grid-template-columns: 365px 365px 365px;
+    gap: 50px;
+    list-style: none;
+    padding: 0px;
+  }
+  &__item{
+    display: flex;
+    
+  }
+  &__icon{
+    margin-right: 25px;
+    fill: getCol('color-fourth');
+  }
+  &__title{
+    font-family: getFont('font-first');
+    font-size: 30px;
+    font-weight: 700;
+    color: getCol('font-color-first');
+    text-transform: uppercase; 
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  &__title::after{
+    content:"";
+    width: 100px;
+    height: 4px;
+    background-color: getCol('color-first');
+    display: block;
+    position: relative;
+    top: 50px;
+    border-radius: 4px;
+    margin: auto;
+  }
+  &__subtitle{
+    font-family: getFont('font-second');
+    font-size: 24px;
+    color: getCol('font-color-first');
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  &__category{
+    text-align: left;
+    font-family: getFont('font-first');
+    font-size: 14px;
+    font-weight: 700;
+    color: getCol('font-color-first');
+    text-transform: uppercase; 
+  }
+  &__txt{
+    text-align: left;
+    font-family: getFont('font-third');
+    font-size: 15px;
+    color: getCol('font-color-third');
+    line-height: 1.80;
+  }
+}
