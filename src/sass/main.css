@@ -242,9 +242,78 @@
   font-size: 15px;
   color: #333;
   line-height: 1.8;
+  margin-bottom: 100px;
+}
+
+.team__grid {
+  padding: 0px;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 380px 380px 380px;
+      grid-template-columns: 380px 380px 380px;
+  gap: 30px;
 }
 
 .team__photo {
   width: 380px;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team__name {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.team__job {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #999;
+}
+
+.team__icon-grid {
+  position: relative;
+  bottom: 460px;
+  left: 8px;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 60px 60px 60px;
+      grid-template-columns: 60px 60px 60px 60px;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 365px;
+  height: 442px;
+  padding: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 132, 132, 0.9)), to(rgba(252, 228, 140, 0.9)));
+  background: linear-gradient(rgba(244, 132, 132, 0.9), rgba(252, 228, 140, 0.9));
+  opacity: 0;
+}
+
+.team__icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  fill: #f48484;
+  background-color: #fce48c;
+}
+
+.team__icon:hover {
+  fill: #fce48c;
+  background-color: #f48484;
+}
+
+.team__item:hover .team__overlay {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -37,10 +37,62 @@
     font-size: 15px;
     color: getCol('font-color-first');
     line-height: 1.8;
+    margin-bottom: 100px;
   }
-
-&__photo{
-width: 380px;
+&__grid{
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 380px 380px 380px;
+  gap: 30px;
 }
-
+&__photo{
+  width: 380px;
+  height: 460px;
+  position: relative;
+  overflow: hidden;
+}
+&__name{
+  font-family: getFont('font-first');
+    font-size: 14px;
+    font-weight: 700;
+    color: getCol('font-color-first');
+    text-transform: uppercase; 
+}
+&__job{
+  font-family: getFont('font-third');
+    font-size: 15px;
+    color: getCol('font-color-third');
+}
+&__icon-grid{
+  position: relative;
+  bottom: 460px;
+  left: 8px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 365px;
+  height: 442px;
+  padding: 0px;
+  background: linear-gradient(rgba(244,132,132, 0.9),rgba(252,228,140, 0.9));
+  opacity: 0;
+}
+&__icon{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  fill: getCol('color-first');
+  background-color: getCol('color-second');
+}
+&__icon:hover{
+  fill: getCol('color-second');
+  background-color: getCol('color-first');
+}
+&__item:hover &__overlay {
+  opacity: 1;
+  
+}
 }
