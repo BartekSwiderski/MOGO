@@ -100,5 +100,8 @@
     border: solid 1px getCol('font-color-second');
     cursor: pointer;
   }
-
+  &__btn:hover{
+    color: getCol('color-first');
+    border: solid 1px getCol('color-first');
+  }
 }

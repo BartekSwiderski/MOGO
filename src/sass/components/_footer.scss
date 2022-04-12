@@ -1,0 +1,43 @@
+@import '../utils/variables';
+
+.footer{
+  display: flex;
+  justify-content:space-between;
+  border-top: 1px solid getCol('color-fifth');
+  margin-top: 70px;
+  align-items: flex-start;
+&__newsletter{
+    display:flex;
+    list-style: none;
+  }
+&__txt{
+    font-size: 14px;
+    color: getCol('font-color-first');
+    font-family: getFont('font-first');
+    font-weight: 400;
+  }
+&__span{
+  color: getCol('color-first');
+}
+&__input{
+  width: 230px;
+  height: 40px;
+  border: 1px solid getCol('color-fifth');
+  padding-left: 10px;
+  outline:none;
+}
+&__input::placeholder{
+  color: getCol('color-fifth');
+}
+&__btn{
+  width: 150px;
+  height: 44px;
+  font-size: 14px;
+  color: getCol('font-color-second');
+  font-weight: 700;
+  font-family: getFont('font-first');
+  text-transform: uppercase; 
+  background-color: getCol('color-fourth');
+  border: none;
+}
+}

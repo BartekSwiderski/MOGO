@@ -49,8 +49,7 @@
 &__photo{
   width: 380px;
   height: 460px;
-  position: relative;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 &__name{
   font-family: getFont('font-first');
@@ -65,9 +64,7 @@
     color: getCol('font-color-third');
 }
 &__icon-grid{
-  position: relative;
-  bottom: 460px;
-  left: 8px;
+  
   list-style: none;
   display: grid;
   grid-template-columns: 60px 60px 60px 60px;
@@ -78,7 +75,7 @@
   height: 442px;
   padding: 0px;
   background: linear-gradient(rgba(244,132,132, 0.9),rgba(252,228,140, 0.9));
-  opacity: 0;
+  box-shadow: getCol('color-fourth') 10px 10px 0px;
 }
 &__icon{
   width: 40px;
@@ -91,8 +88,14 @@
   fill: getCol('color-second');
   background-color: getCol('color-first');
 }
-&__item:hover &__overlay {
+&__overlay{
+position: relative;
+  bottom: 446px;
+  left: 7px;
+
+  opacity: 0;
+}
+&__photo:hover &__overlay{
   opacity: 1;
-  
 }
-}
+} 

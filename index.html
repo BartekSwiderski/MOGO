@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;200;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./src/images/favicon.ico" />
     <link rel="stylesheet" href="./src/sass/main.css" />
-    <title>Document</title>
+    <title>MoGo</title>
   </head>
   <body>
     <header class="header">
@@ -148,35 +149,37 @@
         <li class="team__item">
           <div class="team__photo">
             <img
+            class="team__photo2"
               width="365"
               alt="Zdjęcie Matthew Dix"
               src="./src/images/img1.jpg"
               srcset="./src/images/img1@2x.jpg 2x"
-            />
-          </div>
-          <div class="team__overlay">
-            <ul class="team__icon-grid">
-              <li>
-                <svg class="team__icon" width="20" height="20">
-                  <use href="./src/images/icons.svg#icon-facebook"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-twitter"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-pinterest"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-instagram"></use>
-                </svg>
-              </li>
-            </ul>
+            >
+            <div class="team__overlay">
+              <ul class="team__icon-grid">
+                <li>
+                  <svg class="team__icon" width="20" height="20">
+                    <use href="./src/images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-pinterest"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+            </img>
           </div>
           <p class="team__name">Matthew Dix</p>
           <p class="team__job">Graphic Design</p>
@@ -188,9 +191,8 @@
               alt="Zdjęcie Christopher Campbell"
               src="./src/images/img2.jpg"
               srcset="./src/images/img2@2x.jpg 2x"
-            />
-          </div>
-          <div class="team__overlay">
+            >
+        <div class="team__overlay">
             <ul class="team__icon-grid">
               <li>
                 <svg class="team__icon" width="20" height="20">
@@ -213,6 +215,8 @@
                 </svg>
               </li>
             </ul>
+          </div>
+        </img>
           </div>
           <p class="team__name">Christopher Campbell</p>
           <p class="team__job">Branding/UX design</p>
@@ -224,37 +228,53 @@
               alt="Zdjęcie Michael Fertig"
               src="./src/images/img3.jpg"
               srcset="./src/images/img3@2x.jpg 2x"
-            />
-          </div>
-          <div class="team__overlay">
-            <ul class="team__icon-grid">
-              <li>
-                <svg class="team__icon" width="20" height="20">
-                  <use href="./src/images/icons.svg#icon-facebook"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-twitter"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-pinterest"></use>
-                </svg>
-              </li>
-              <li>
-                <svg class="team__icon" width="30" height="30">
-                  <use href="./src/images/icons.svg#icon-instagram"></use>
-                </svg>
-              </li>
-            </ul>
+            >
+            <div class="team__overlay">
+              <ul class="team__icon-grid">
+                <li>
+                  <svg class="team__icon" width="20" height="20">
+                    <use href="./src/images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-pinterest"></use>
+                  </svg>
+                </li>
+                <li>
+                  <svg class="team__icon" width="30" height="30">
+                    <use href="./src/images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </img>
           </div>
           <p class="team__name">Michael Fertig</p>
           <p class="team__job">Developer</p>
         </li>
       </ul>
     </div>
-    <footer></footer>
+    <footer class="footer container">
+        <p class="footer__txt">© 2016 MoGo free PSD template by <span class="footer__span">Laaqiq</span></p>
+
+        
+          <ul class="footer__newsletter">
+              <li><form>
+                  <label >
+                    <input class="footer__input" type="email" name="email" placeholder="Your Email" />
+                  </label></li>
+              <li><button type="submit" class="footer__btn">
+                  subscribe
+                  </button>
+              </form></li>
+          </ul>
+      
+    </footer>
   </body>
 </html>

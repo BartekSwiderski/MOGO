@@ -129,6 +129,11 @@
   cursor: pointer;
 }
 
+.header__btn:hover {
+  color: #f48484;
+  border: solid 1px #f48484;
+}
+
 .services {
   text-align: center;
 }
@@ -258,8 +263,7 @@
 .team__photo {
   width: 380px;
   height: 460px;
-  position: relative;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .team__name {
@@ -277,9 +281,6 @@
 }
 
 .team__icon-grid {
-  position: relative;
-  bottom: 460px;
-  left: 8px;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -297,7 +298,8 @@
   padding: 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 132, 132, 0.9)), to(rgba(252, 228, 140, 0.9)));
   background: linear-gradient(rgba(244, 132, 132, 0.9), rgba(252, 228, 140, 0.9));
-  opacity: 0;
+  -webkit-box-shadow: #94e4d4 10px 10px 0px;
+          box-shadow: #94e4d4 10px 10px 0px;
 }
 
 .team__icon {
@@ -313,7 +315,82 @@
   background-color: #f48484;
 }
 
-.team__item:hover .team__overlay {
+.team__overlay {
+  position: relative;
+  bottom: 446px;
+  left: 7px;
+  opacity: 0;
+}
+
+.team__photo:hover .team__overlay {
   opacity: 1;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 70px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.footer__txt {
+  font-size: 14px;
+  color: #333;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.footer__span {
+  color: #f48484;
+}
+
+.footer__input {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  padding-left: 10px;
+  outline: none;
+}
+
+.footer__input::-webkit-input-placeholder {
+  color: #e5e5e5;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #e5e5e5;
+}
+
+.footer__input::placeholder {
+  color: #e5e5e5;
+}
+
+.footer__btn {
+  width: 150px;
+  height: 44px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background-color: #94e4d4;
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */
